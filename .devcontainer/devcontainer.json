@@ -1,0 +1,6 @@
+{
+  "name": "AWS Dev Container",
+  "features": {
+    "ghcr.io/devcontainers/features/aws-cli:1": {}
+  }
+}
