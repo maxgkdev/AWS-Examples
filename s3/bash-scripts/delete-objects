@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+echo "== delete objects"
+
+#Exit immedietly if any command returns a non zero status
+set -e
+
+#Check for bucket name
+
+if [ -z "$1" ]; then
+    echo "No bucket name provided. eg. ./bucket my-bucket-name"
+    exit 1
+fi
+
+BUCKET_NAME=$1
+
+$(aws s3api list-objects-v2 --bucket $BUCKET_NAME)
+
+
+aws s3api delete-objects --bucket $BUCKET_NAME
