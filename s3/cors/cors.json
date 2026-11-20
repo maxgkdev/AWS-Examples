@@ -1,0 +1,22 @@
+{
+    "CORSRules": [
+        {
+            "AllowedOrigins": [
+                "https://fonts.gstatic.com"
+            ],
+            "AllowedHeaders": [
+                "*"
+            ],
+            "AllowedMethods": [
+                "PUT",
+                "POST",
+                "DELETE"
+            ],
+            "MaxAgeSeconds": 3000,
+            "ExposeHeaders": [
+                "x-amz-server-side-encryption"
+            ]
+        }
+        
+    ]
+}
